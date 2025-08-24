@@ -1,7 +1,7 @@
 #!/usr/bin/env -S PYTHONPATH=../telemetry python3
 
 from telemetry.config_log import *
-from high_stakes.events import *
+from push_back.events import *
 
 # Open log based on config
 config_open_log()
