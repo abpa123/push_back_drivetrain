@@ -23,24 +23,24 @@ def autonomous_function():
 
     log(("Competition", "competition"), "autonomous_begin")
 
-    robot_position.reset(Position(1500, 1200))
-    reset_heading_to_aim(Position(600, 600), REVERSE)
+    # robot_position.reset(Position(1500, 1200))
+    # reset_heading_to_aim(Position(600, 600), REVERSE)
 
-    reset_robot_position_and_heading_to_gps()
+    # reset_robot_position_and_heading_to_gps()
 
-    slow_trigger_mover.move(Position(600, 600), REVERSE)
-    wait_and_clamp()
-    intake.spin_forward()
+    # slow_trigger_mover.move(Position(600, 600), REVERSE)
+    # wait_and_clamp()
+    # intake.spin_forward()
 
-    # Use this for 4-ring
-    trigger_mover.move(Position(600, 1200))
-    trigger_mover.move(Position(240, 1210))
-    trigger_mover.move(Position(600, 1200), REVERSE)
-    trigger_mover.move(Position(240, 1100))
-    wait(1500, MSEC)
-    trigger_mover.move(Position(305, 353))
-    unclamp()
-    intake.stop()
+    # # Use this for 4-ring
+    # trigger_mover.move(Position(600, 1200))
+    # trigger_mover.move(Position(240, 1210))
+    # trigger_mover.move(Position(600, 1200), REVERSE)
+    # trigger_mover.move(Position(240, 1100))
+    # wait(1500, MSEC)
+    # trigger_mover.move(Position(305, 353))
+    # unclamp()
+    # intake.stop()
 
     # Use this for 2-ring
     # trigger_turner.turn(42, FRAME_ABSOLUTE)
